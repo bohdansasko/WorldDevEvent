@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CA9229F008A001D4AAC /* AppDelegate.swift */; };
-		C7E30CAC229F008A001D4AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CAB229F008A001D4AAC /* ViewController.swift */; };
+		C7E30CAC229F008A001D4AAC /* WorldDevEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CAB229F008A001D4AAC /* WorldDevEventViewController.swift */; };
 		C7E30CAF229F008A001D4AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CAD229F008A001D4AAC /* Main.storyboard */; };
 		C7E30CB1229F008B001D4AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CB0229F008B001D4AAC /* Assets.xcassets */; };
 		C7E30CB4229F008B001D4AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CB2229F008B001D4AAC /* LaunchScreen.storyboard */; };
+		C7E30CBF229F05C4001D4AAC /* WDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CBE229F05C4001D4AAC /* WDEvent.swift */; };
+		C7E30CC1229F0639001D4AAC /* ListEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC0229F0639001D4AAC /* ListEventsCell.swift */; };
+		C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */; };
+		C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7E30CA6229F008A001D4AAC /* WorldDevEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldDevEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E30CA9229F008A001D4AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7E30CAB229F008A001D4AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7E30CAB229F008A001D4AAC /* WorldDevEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDevEventViewController.swift; sourceTree = "<group>"; };
 		C7E30CAE229F008A001D4AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7E30CB0229F008B001D4AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7E30CB3229F008B001D4AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7E30CB5229F008B001D4AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E30CBE229F05C4001D4AAC /* WDEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEvent.swift; sourceTree = "<group>"; };
+		C7E30CC0229F0639001D4AAC /* ListEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsCell.swift; sourceTree = "<group>"; };
+		C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
+		C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				C7E30CA9229F008A001D4AAC /* AppDelegate.swift */,
-				C7E30CAB229F008A001D4AAC /* ViewController.swift */,
+				C7E30CC6229F18B6001D4AAC /* view */,
+				C7E30CC5229F18B0001D4AAC /* model */,
+				C7E30CC4229F18A3001D4AAC /* extensions */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -86,6 +96,32 @@
 				C7E30CB2229F008B001D4AAC /* LaunchScreen.storyboard */,
 			);
 			path = storyboards;
+			sourceTree = "<group>";
+		};
+		C7E30CC4229F18A3001D4AAC /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		C7E30CC5229F18B0001D4AAC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */,
+				C7E30CBE229F05C4001D4AAC /* WDEvent.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C7E30CC6229F18B6001D4AAC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C7E30CAB229F008A001D4AAC /* WorldDevEventViewController.swift */,
+				C7E30CC0229F0639001D4AAC /* ListEventsCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7E30CAC229F008A001D4AAC /* ViewController.swift in Sources */,
+				C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */,
+				C7E30CC1229F0639001D4AAC /* ListEventsCell.swift in Sources */,
+				C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */,
+				C7E30CAC229F008A001D4AAC /* WorldDevEventViewController.swift in Sources */,
+				C7E30CBF229F05C4001D4AAC /* WDEvent.swift in Sources */,
 				C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
