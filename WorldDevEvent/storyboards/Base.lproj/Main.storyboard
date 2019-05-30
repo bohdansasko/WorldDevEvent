@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
         <array key="SF-Pro-Text-Regular.otf">
             <string>SFProText-Regular</string>
         </array>
@@ -24,19 +27,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WDEventViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="98" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-nr-7KZ">
-                                <rect key="frame" x="0.0" y="138" width="414" height="758"/>
+                                <rect key="frame" x="0.0" y="138" width="375" height="674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" name="tomatoTwo"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="ListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="98"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A26-0b-R4o" id="Efa-gq-TT2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-ec-Zp2">
@@ -47,16 +50,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-XI-gUb" userLabel="titleAndDescription">
-                                                    <rect key="frame" x="96" y="28" width="284" height="42"/>
+                                                    <rect key="frame" x="96" y="28.333333333333332" width="245" height="41.666666666666671"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-9c-LWY">
-                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="20.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.2.2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKd-r7-GRj">
-                                                            <rect key="frame" x="0.0" y="21.5" width="66" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="21.333333333333336" width="66" height="20.333333333333336"/>
                                                             <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
                                                             <color key="textColor" name="brownGrey"/>
                                                             <nil key="highlightedColor"/>
@@ -64,14 +67,14 @@
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-h8-lKE" userLabel="separatorView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
-                                                    <color key="backgroundColor" name="separatorColor"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.66666666666666663"/>
+                                                    <color key="backgroundColor" name="separator"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="0.5" id="uCc-xw-1Ie"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="singleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-Vd-rts">
-                                                    <rect key="frame" x="385" y="39.5" width="19" height="19"/>
+                                                    <rect key="frame" x="346" y="39.666666666666664" width="19" height="19"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -91,12 +94,13 @@
                                             <outlet property="descriptionLabel" destination="XKd-r7-GRj" id="VxZ-7h-R7u"/>
                                             <outlet property="smallImageView" destination="gLZ-ec-Zp2" id="H2g-Fb-3Zt"/>
                                             <outlet property="titleLabel" destination="nU5-9c-LWY" id="aoI-do-lQj"/>
+                                            <segue destination="d5F-0c-KlZ" kind="show" id="YRJ-ZR-GXx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-v9-vIZ">
-                                <rect key="frame" x="16" y="99" width="382" height="29"/>
+                                <rect key="frame" x="16" y="99" width="343" height="29"/>
                                 <segments>
                                     <segment title="Events"/>
                                     <segment title="Shops"/>
@@ -116,7 +120,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="World Dev Event" id="pqq-2m-5L4"/>
+                    <navigationItem key="navigationItem" title="World Dev Event" id="pqq-2m-5L4">
+                        <barButtonItem key="backBarButtonItem" title=" " id="cTo-ZC-p2i"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="listEventsView" destination="0qd-nr-7KZ" id="Evd-oT-Mrx"/>
                         <outlet property="listTypeControl" destination="B1h-v9-vIZ" id="mbh-6G-1bW"/>
@@ -126,14 +132,93 @@
             </objects>
             <point key="canvasLocation" x="975.36231884057975" y="24.776785714285712"/>
         </scene>
+        <!--Event-->
+        <scene sceneID="OLh-5l-yTy">
+            <objects>
+                <viewController title="Event" id="d5F-0c-KlZ" customClass="WDEventDetailsViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpc-Lz-7fz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event12" translatesAutoresizingMaskIntoConstraints="NO" id="j33-jZ-d7f">
+                                <rect key="frame" x="0.0" y="88" width="375" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="283" id="Yv4-tz-wFP"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="7od-oq-r5h" userLabel="textStackView">
+                                <rect key="frame" x="17" y="399" width="334" height="413"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="N9G-V1-kAy" userLabel="titleAndDescription">
+                                        <rect key="frame" x="0.0" y="0.0" width="240.33333333333334" height="46.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXe-aV-hv5">
+                                                <rect key="frame" x="0.0" y="0.0" width="240.33333333333334" height="23"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.2.2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LW-zj-vYW">
+                                                <rect key="frame" x="0.0" y="27" width="70.333333333333329" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                                                <color key="textColor" name="brownGrey"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wr-RI-MhV">
+                                        <rect key="frame" x="0.0" y="63.333333333333314" width="334" height="349.66666666666669"/>
+                                        <string key="text">When Google’s CEO Sundar Pichai was growing up in Chennai, south-east India, he had to make regular trips to the hospital to pick up his mother’s blood-test results. It took an hour and 20 minutes by bus, and when he got there he would have to stand and queue for an hour, often to be told the results weren’t ready. It took five years for his family to get their first rotary telephone, when Pichai was 12. It was a landmark moment. “It would take me 10 minutes to call the hospital, and maybe they’d tell me, ‘No, come back tomorrow’,” Pichai says. “We waited a long time to get a refrigerator, too, and I saw how my mom’s life changed: she didn’t need to cook every day, she could spend more time with us. So there is a side of me that has viscerally seen how technology can make a difference, and I still feel it. I feel the optimism and energy, and the moral imperative to accelerate that progress.” Now 45, Pichai is a tall, slight man whose voice is a soft harmony of Indian and American accents. Sitting in his office in a quiet corner of Google’s headquarters, in Mountain View, California, he speaks thoughtfully, often pausing to find the right phrase. The room houses a few pieces of designer furniture, and the requisite treadmill desk – the perfect metaphor for the pace Pichai has to keep up with. Yet his is a disarmingly calm presence, a world away from the prevailing stereotype of the macho-genius tech CEO; when Pichai got the job, one Google employee was quoted as saying: “All the assholes have left.</string>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f04-Gq-fza">
+                                <rect key="frame" x="0.0" y="749" width="375" height="63"/>
+                                <color key="backgroundColor" name="leaf"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="l6L-w3-MR3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="-13" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Show on Map">
+                                    <color key="titleColor" name="navigationBar"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchButtonShowOnMap:" destination="d5F-0c-KlZ" eventType="touchUpInside" id="HAO-PD-4Nm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="navigationBar"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7od-oq-r5h" secondAttribute="trailing" constant="24" id="HDQ-GU-4Sl"/>
+                            <constraint firstAttribute="bottom" secondItem="7od-oq-r5h" secondAttribute="bottom" id="NhI-Qp-pXE"/>
+                            <constraint firstItem="j33-jZ-d7f" firstAttribute="top" secondItem="qQd-Ld-8ae" secondAttribute="top" id="SZD-wT-5P2"/>
+                            <constraint firstItem="7od-oq-r5h" firstAttribute="top" secondItem="j33-jZ-d7f" secondAttribute="bottom" constant="28" id="j51-Og-Mgt"/>
+                            <constraint firstAttribute="trailing" secondItem="j33-jZ-d7f" secondAttribute="trailing" id="jrp-Z2-Sdc"/>
+                            <constraint firstItem="f04-Gq-fza" firstAttribute="leading" secondItem="jpc-Lz-7fz" secondAttribute="leading" id="n2G-AD-de6"/>
+                            <constraint firstItem="j33-jZ-d7f" firstAttribute="leading" secondItem="jpc-Lz-7fz" secondAttribute="leading" id="vjD-Kx-gtF"/>
+                            <constraint firstAttribute="bottom" secondItem="f04-Gq-fza" secondAttribute="bottom" id="wcV-TF-nsb"/>
+                            <constraint firstItem="7od-oq-r5h" firstAttribute="leading" secondItem="jpc-Lz-7fz" secondAttribute="leading" constant="17" id="wng-t5-z3u"/>
+                            <constraint firstAttribute="trailing" secondItem="f04-Gq-fza" secondAttribute="trailing" id="y3H-Xp-G6h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qQd-Ld-8ae"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmX-ws-fqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.9710144927537" y="24.776785714285712"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="y5q-T2-KY0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jQE-Cr-cxn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bFc-XV-ufJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="chevron" backIndicatorTransitionMaskImage="chevron" id="bFc-XV-ufJ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="tomatoTwo"/>
                         <color key="barTintColor" name="navigationBar"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
@@ -151,14 +236,19 @@
     </scenes>
     <resources>
         <image name="bitmap" width="66" height="66"/>
+        <image name="chevron" width="12" height="21"/>
+        <image name="event12" width="1080" height="600"/>
         <image name="singleArrow" width="19" height="19"/>
         <namedColor name="brownGrey">
             <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="leaf">
+            <color red="0.47843137254901963" green="0.70980392156862748" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="navigationBar">
             <color red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="separatorColor">
+        <namedColor name="separator">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="tomatoTwo">

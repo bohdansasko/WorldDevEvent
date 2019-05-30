@@ -13,6 +13,7 @@
 		C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */; };
 		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
 		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
+		C70CA39222A0103100CAF4B2 /* WDEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA39122A0103100CAF4B2 /* WDEventDetailsViewController.swift */; };
 		C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CA9229F008A001D4AAC /* AppDelegate.swift */; };
 		C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */; };
 		C7E30CAF229F008A001D4AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CAD229F008A001D4AAC /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		C70CA39122A0103100CAF4B2 /* WDEventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewController.swift; sourceTree = "<group>"; };
 		C7E30CA6229F008A001D4AAC /* WorldDevEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldDevEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E30CA9229F008A001D4AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = WDEvents;
 			sourceTree = "<group>";
 		};
+		C70CA39322A0105A00CAF4B2 /* WDEventDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C70CA39122A0103100CAF4B2 /* WDEventDetailsViewController.swift */,
+			);
+			path = WDEventDetails;
+			sourceTree = "<group>";
+		};
 		C7E30C9D229F008A001D4AAC = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 				C7E30CA9229F008A001D4AAC /* AppDelegate.swift */,
 				20095621229F3EA00044CD32 /* WDEventsAPI.swift */,
 				C70CA38D22A00F9E00CAF4B2 /* WDEvents */,
+				C70CA39322A0105A00CAF4B2 /* WDEventDetails */,
 				C7E30CC4229F18A3001D4AAC /* extensions */,
 			);
 			path = sources;
@@ -247,6 +258,7 @@
 				C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */,
 				C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */,
 				2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */,
+				C70CA39222A0103100CAF4B2 /* WDEventDetailsViewController.swift in Sources */,
 				C7E30CBF229F05C4001D4AAC /* WDEvent.swift in Sources */,
 				C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */,
 			);
@@ -398,6 +410,7 @@
 				DEVELOPMENT_TEAM = RQ8948VJT6;
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = WorldDevEvent/resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +430,7 @@
 				DEVELOPMENT_TEAM = RQ8948VJT6;
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = WorldDevEvent/resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
