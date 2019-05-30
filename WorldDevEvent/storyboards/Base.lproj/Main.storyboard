@@ -181,7 +181,6 @@
                                     <constraint firstAttribute="height" constant="63" id="l6L-w3-MR3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="17"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="-13" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Show on Map">
                                     <color key="titleColor" name="navigationBar"/>
                                 </state>
@@ -206,6 +205,10 @@
                         <viewLayoutGuide key="safeArea" id="qQd-Ld-8ae"/>
                     </view>
                     <connections>
+                        <outlet property="bigImageView" destination="j33-jZ-d7f" id="stL-jy-Atj"/>
+                        <outlet property="descriptionLabel" destination="5wr-RI-MhV" id="p86-GK-aVa"/>
+                        <outlet property="shortDescriptionLabel" destination="1LW-zj-vYW" id="zGC-Wb-DLw"/>
+                        <outlet property="titleLabel" destination="FXe-aV-hv5" id="XPB-9R-OEe"/>
                         <segue destination="xEv-2d-WSY" kind="show" identifier="toMapSegue" id="6ZC-VZ-9f6"/>
                     </connections>
                 </viewController>

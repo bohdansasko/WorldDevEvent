@@ -9,6 +9,11 @@
 import UIKit
 
 class WDEventDetailsViewController: UIViewController {
+    @IBOutlet weak var bigImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var shortDescriptionLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     var event: WDEvent!
     let kToMapSegue = "toMapSegue"
     
@@ -23,6 +28,11 @@ class WDEventDetailsViewController: UIViewController {
         case .event: title = "Event"
         case .shop: title = "Shop"
         }
+        
+        bigImageView.load(withURL: event.bigImageURL)
+        titleLabel.text = event.title
+        shortDescriptionLabel.text = event.shortDescription
+        descriptionLabel.text = event.description
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -38,5 +48,4 @@ class WDEventDetailsViewController: UIViewController {
         print(#function)
         performSegue(withIdentifier: kToMapSegue, sender: self)
     }
-    
 }
