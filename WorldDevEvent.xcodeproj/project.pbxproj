@@ -73,6 +73,16 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		C70CA38D22A00F9E00CAF4B2 /* WDEvents */ = {
+			isa = PBXGroup;
+			children = (
+				C7E30CC5229F18B0001D4AAC /* model */,
+				20095620229F3E830044CD32 /* viewModel */,
+				C7E30CC6229F18B6001D4AAC /* view */,
+			);
+			path = WDEvents;
+			sourceTree = "<group>";
+		};
 		C7E30C9D229F008A001D4AAC = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +114,7 @@
 			children = (
 				C7E30CA9229F008A001D4AAC /* AppDelegate.swift */,
 				20095621229F3EA00044CD32 /* WDEventsAPI.swift */,
-				20095620229F3E830044CD32 /* viewModel */,
-				C7E30CC6229F18B6001D4AAC /* view */,
-				C7E30CC5229F18B0001D4AAC /* model */,
+				C70CA38D22A00F9E00CAF4B2 /* WDEvents */,
 				C7E30CC4229F18A3001D4AAC /* extensions */,
 			);
 			path = sources;
