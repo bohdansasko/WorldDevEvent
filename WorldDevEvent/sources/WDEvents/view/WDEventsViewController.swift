@@ -12,8 +12,11 @@ class WDEventViewController: UIViewController {
     @IBOutlet weak var listEventsView: UITableView!
     @IBOutlet weak var listTypeControl: UISegmentedControl!
     
+    let kToDetailsSegue = "toDetailsSegue"
+    
     var viewModel: WDEventViewModelProtocol = WDEventViewModel()
     var eventsDataSource: WDEventsDataSourceProtocol = WDEventsDataSource()
+    private var eventSelectedIndexPath: IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +49,18 @@ class WDEventViewController: UIViewController {
         }
         viewModel.currenListType = selectedListType
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == kToDetailsSegue {
+            let detailsViewController = segue.destination as! WDEventDetailsViewController
+            guard let eventSelectedIndexPath = eventSelectedIndexPath else {
+                return
+            }
+            detailsViewController.event = eventsDataSource.event(by: eventSelectedIndexPath)
+        }
+    }
 }
 
 extension WDEventViewController: UITableViewDelegate {
@@ -61,7 +76,9 @@ extension WDEventViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        eventSelectedIndexPath = indexPath
         tableView.deselectRow(at: indexPath, animated: false)
+        performSegue(withIdentifier: kToDetailsSegue, sender: self)
     }
 }
 

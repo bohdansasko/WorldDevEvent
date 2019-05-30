@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,7 +94,6 @@
                                             <outlet property="descriptionLabel" destination="XKd-r7-GRj" id="VxZ-7h-R7u"/>
                                             <outlet property="smallImageView" destination="gLZ-ec-Zp2" id="H2g-Fb-3Zt"/>
                                             <outlet property="titleLabel" destination="nU5-9c-LWY" id="aoI-do-lQj"/>
-                                            <segue destination="d5F-0c-KlZ" kind="show" id="YRJ-ZR-GXx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -126,6 +125,7 @@
                     <connections>
                         <outlet property="listEventsView" destination="0qd-nr-7KZ" id="Evd-oT-Mrx"/>
                         <outlet property="listTypeControl" destination="B1h-v9-vIZ" id="mbh-6G-1bW"/>
+                        <segue destination="d5F-0c-KlZ" kind="show" identifier="toDetailsSegue" id="wPS-Rd-gIv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -205,10 +205,45 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qQd-Ld-8ae"/>
                     </view>
+                    <connections>
+                        <segue destination="xEv-2d-WSY" kind="show" identifier="toMapSegue" id="6ZC-VZ-9f6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmX-ws-fqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1757.9710144927537" y="24.776785714285712"/>
+        </scene>
+        <!--Event Location-->
+        <scene sceneID="bN8-9v-fS7">
+            <objects>
+                <viewController title="Event Location" id="xEv-2d-WSY" customClass="WDEventOnMapViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PT1-By-Abm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1bb-uV-3Sk">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PT1-By-Abm" id="ZKs-qs-ePz"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1bb-uV-3Sk" secondAttribute="trailing" id="Imk-ag-wTI"/>
+                            <constraint firstItem="1bb-uV-3Sk" firstAttribute="leading" secondItem="PT1-By-Abm" secondAttribute="leading" id="XOw-S6-wXz"/>
+                            <constraint firstItem="1bb-uV-3Sk" firstAttribute="top" secondItem="hSF-C7-J77" secondAttribute="top" id="bMi-UZ-Ddp"/>
+                            <constraint firstAttribute="bottom" secondItem="1bb-uV-3Sk" secondAttribute="bottom" id="lXZ-xl-zo4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hSF-C7-J77"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="1bb-uV-3Sk" id="mnu-ZT-zFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nse-Kl-2oH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="23.645320197044335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y5q-T2-KY0">
@@ -237,7 +272,7 @@
     <resources>
         <image name="bitmap" width="66" height="66"/>
         <image name="chevron" width="12" height="21"/>
-        <image name="event12" width="1080" height="600"/>
+        <image name="event12" width="540" height="300"/>
         <image name="singleArrow" width="19" height="19"/>
         <namedColor name="brownGrey">
             <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

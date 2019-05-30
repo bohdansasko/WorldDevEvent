@@ -10,6 +10,8 @@
 		2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */; };
 		20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095621229F3EA00044CD32 /* WDEventsAPI.swift */; };
 		20095624229F42BD0044CD32 /* WDEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095623229F42BD0044CD32 /* WDEvents.swift */; };
+		2055EC2822A089B80089612B /* WDEventOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC2722A089B80089612B /* WDEventOnMapViewController.swift */; };
+		2055EC2A22A090300089612B /* WDEventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC2922A090300089612B /* WDEventAnnotation.swift */; };
 		C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */; };
 		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
 		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
@@ -29,6 +31,8 @@
 		2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewModel.swift; sourceTree = "<group>"; };
 		20095621229F3EA00044CD32 /* WDEventsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsAPI.swift; sourceTree = "<group>"; };
 		20095623229F42BD0044CD32 /* WDEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEvents.swift; sourceTree = "<group>"; };
+		2055EC2722A089B80089612B /* WDEventOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventOnMapViewController.swift; sourceTree = "<group>"; };
+		2055EC2922A090300089612B /* WDEventAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventAnnotation.swift; sourceTree = "<group>"; };
 		C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 				2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		2055EC2622A0893F0089612B /* WDEventOnMap */ = {
+			isa = PBXGroup;
+			children = (
+				2055EC2722A089B80089612B /* WDEventOnMapViewController.swift */,
+				2055EC2922A090300089612B /* WDEventAnnotation.swift */,
+			);
+			path = WDEventOnMap;
 			sourceTree = "<group>";
 		};
 		C70CA38C22A00BCC00CAF4B2 /* fonts */ = {
@@ -126,6 +139,7 @@
 				20095621229F3EA00044CD32 /* WDEventsAPI.swift */,
 				C70CA38D22A00F9E00CAF4B2 /* WDEvents */,
 				C70CA39322A0105A00CAF4B2 /* WDEventDetails */,
+				2055EC2622A0893F0089612B /* WDEventOnMap */,
 				C7E30CC4229F18A3001D4AAC /* extensions */,
 			);
 			path = sources;
@@ -253,10 +267,12 @@
 			files = (
 				20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */,
 				C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */,
+				2055EC2A22A090300089612B /* WDEventAnnotation.swift in Sources */,
 				20095624229F42BD0044CD32 /* WDEvents.swift in Sources */,
 				C7E30CC1229F0639001D4AAC /* ListEventsCell.swift in Sources */,
 				C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */,
 				C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */,
+				2055EC2822A089B80089612B /* WDEventOnMapViewController.swift in Sources */,
 				2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */,
 				C70CA39222A0103100CAF4B2 /* WDEventDetailsViewController.swift in Sources */,
 				C7E30CBF229F05C4001D4AAC /* WDEvent.swift in Sources */,
