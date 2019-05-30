@@ -10,6 +10,9 @@
 		2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */; };
 		20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095621229F3EA00044CD32 /* WDEventsAPI.swift */; };
 		20095624229F42BD0044CD32 /* WDEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095623229F42BD0044CD32 /* WDEvents.swift */; };
+		C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */; };
+		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
+		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
 		C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CA9229F008A001D4AAC /* AppDelegate.swift */; };
 		C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */; };
 		C7E30CAF229F008A001D4AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CAD229F008A001D4AAC /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 		2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewModel.swift; sourceTree = "<group>"; };
 		20095621229F3EA00044CD32 /* WDEventsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsAPI.swift; sourceTree = "<group>"; };
 		20095623229F42BD0044CD32 /* WDEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEvents.swift; sourceTree = "<group>"; };
+		C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		C7E30CA6229F008A001D4AAC /* WorldDevEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldDevEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E30CA9229F008A001D4AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,16 @@
 				2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		C70CA38C22A00BCC00CAF4B2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */,
+				C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */,
+				C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		C7E30C9D229F008A001D4AAC = {
@@ -99,6 +115,7 @@
 		C7E30CBC229F00A8001D4AAC /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				C70CA38C22A00BCC00CAF4B2 /* fonts */,
 				C7E30CB0229F008B001D4AAC /* Assets.xcassets */,
 				C7E30CB5229F008B001D4AAC /* Info.plist */,
 			);
@@ -199,6 +216,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */,
+				C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */,
+				C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */,
 				C7E30CB4229F008B001D4AAC /* LaunchScreen.storyboard in Resources */,
 				C7E30CB1229F008B001D4AAC /* Assets.xcassets in Resources */,
 				C7E30CAF229F008A001D4AAC /* Main.storyboard in Resources */,
