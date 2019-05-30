@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,20 +13,20 @@
         <!--World Dev Event-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WorldDevEventViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WDEventViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-nr-7KZ">
-                                <rect key="frame" x="0.0" y="138" width="375" height="640"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="ListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="98"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A26-0b-R4o" id="Efa-gq-TT2">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="97.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="97.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" image="event1" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-ec-Zp2">
@@ -37,16 +37,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-XI-gUb">
-                                                    <rect key="frame" x="96" y="27.999999999999996" width="210" height="41.666666666666657"/>
+                                                    <rect key="frame" x="96" y="28" width="262" height="42"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-9c-LWY">
-                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="20.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.2.2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKd-r7-GRj">
-                                                            <rect key="frame" x="0.0" y="21.333333333333336" width="64" height="20.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="21.5" width="64" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -56,6 +56,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gLZ-ec-Zp2" firstAttribute="leading" secondItem="Efa-gq-TT2" secondAttribute="leading" constant="16" id="MrH-eS-tee"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UUJ-XI-gUb" secondAttribute="trailing" constant="10" id="V3C-Lj-9E0"/>
                                                 <constraint firstItem="UUJ-XI-gUb" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="c2n-jN-ZGV"/>
                                                 <constraint firstItem="gLZ-ec-Zp2" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="ltm-Ox-fxi"/>
                                                 <constraint firstItem="UUJ-XI-gUb" firstAttribute="leading" secondItem="gLZ-ec-Zp2" secondAttribute="trailing" constant="14" id="txY-Xx-xZa"/>
@@ -70,7 +71,7 @@
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-v9-vIZ">
-                                <rect key="frame" x="16" y="99" width="343" height="29"/>
+                                <rect key="frame" x="16" y="99" width="382" height="29"/>
                                 <segments>
                                     <segment title="Events"/>
                                     <segment title="Shops"/>
@@ -92,6 +93,7 @@
                     <navigationItem key="navigationItem" title="World Dev Event" id="pqq-2m-5L4"/>
                     <connections>
                         <outlet property="listEventsView" destination="0qd-nr-7KZ" id="Evd-oT-Mrx"/>
+                        <outlet property="listTypeControl" destination="B1h-v9-vIZ" id="mbh-6G-1bW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,7 +106,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jQE-Cr-cxn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bFc-XV-ufJ">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

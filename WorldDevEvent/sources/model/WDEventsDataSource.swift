@@ -9,17 +9,13 @@
 import UIKit
 
 protocol WDEventsDataSourceProtocol: UITableViewDataSource {
+    var events: [WDEvent] { get set }
     func event(by indexPath: IndexPath) -> WDEvent
 }
 
 class WDEventsDataSource: NSObject {
-    var events: [WDEvent] = [
-        WDEvent(id: 1, type: .event, title: "Madison Sqaure Garden 2", shortDescription: "11.2.2019", description: "11.2.2019", smallImageURL: "http://mama-studio.com/tt/event1.png", bigImageURL: "http://mama-studio.com/tt/event11.png", latitude: 40.817817, longtitude: 74.251631),
-        WDEvent(id: 2, type: .event, title: "Early Winter SHOW", shortDescription: "11.2.2019", description: "21.3.2019", smallImageURL: "http://mama-studio.com/tt/event2.png", bigImageURL: "http://mama-studio.com/tt/event12.png", latitude: 40.817817, longtitude: 74.251631),
-        WDEvent(id: 3, type: .event, title: "Christmas DroidConf", shortDescription: "11.2.2019", description: "31.3.2019", smallImageURL: "http://mama-studio.com/tt/event3.png", bigImageURL: "http://mama-studio.com/tt/event13.png", latitude: 40.817817, longtitude: 74.251631)
-    ]
-    
     private let kListEventCell = "ListEventCell"
+    var events: [WDEvent] = []
 }
 
 extension WDEventsDataSource: WDEventsDataSourceProtocol {
