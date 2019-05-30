@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--World Dev Event-->
         <scene sceneID="tne-QT-ifu">
@@ -18,47 +27,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-nr-7KZ">
-                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="98" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-nr-7KZ">
+                                <rect key="frame" x="0.0" y="138" width="414" height="758"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" name="tomatoTwo"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="ListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="ListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A26-0b-R4o" id="Efa-gq-TT2">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="97.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" image="event1" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-ec-Zp2">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-ec-Zp2">
                                                     <rect key="frame" x="16" y="16" width="66" height="66"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="66" id="HCw-HT-ctM"/>
                                                         <constraint firstAttribute="width" constant="66" id="w51-4g-Ygi"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-XI-gUb">
-                                                    <rect key="frame" x="96" y="28" width="262" height="42"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-XI-gUb" userLabel="titleAndDescription">
+                                                    <rect key="frame" x="96" y="28" width="284" height="42"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-9c-LWY">
-                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="20.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.2.2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKd-r7-GRj">
-                                                            <rect key="frame" x="0.0" y="21.5" width="64" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <rect key="frame" x="0.0" y="21.5" width="66" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                            <color key="textColor" name="brownGrey"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-h8-lKE" userLabel="separatorView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                                                    <color key="backgroundColor" name="separatorColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="0.5" id="uCc-xw-1Ie"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="singleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-Vd-rts">
+                                                    <rect key="frame" x="385" y="39.5" width="19" height="19"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Tgq-h8-lKE" secondAttribute="trailing" id="2Nc-k7-iWN"/>
+                                                <constraint firstItem="9Tz-Vd-rts" firstAttribute="leading" secondItem="UUJ-XI-gUb" secondAttribute="trailing" constant="5" id="AKd-mN-IYc"/>
                                                 <constraint firstItem="gLZ-ec-Zp2" firstAttribute="leading" secondItem="Efa-gq-TT2" secondAttribute="leading" constant="16" id="MrH-eS-tee"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="UUJ-XI-gUb" secondAttribute="trailing" constant="10" id="V3C-Lj-9E0"/>
+                                                <constraint firstItem="Tgq-h8-lKE" firstAttribute="top" secondItem="Efa-gq-TT2" secondAttribute="top" id="Ww9-5I-Fmh"/>
                                                 <constraint firstItem="UUJ-XI-gUb" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="c2n-jN-ZGV"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Tz-Vd-rts" secondAttribute="trailing" constant="10" id="c4j-dq-Tyb"/>
+                                                <constraint firstItem="9Tz-Vd-rts" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="kfG-cu-NdP"/>
                                                 <constraint firstItem="gLZ-ec-Zp2" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="ltm-Ox-fxi"/>
+                                                <constraint firstItem="Tgq-h8-lKE" firstAttribute="leading" secondItem="Efa-gq-TT2" secondAttribute="leading" id="sey-hb-CIC"/>
                                                 <constraint firstItem="UUJ-XI-gUb" firstAttribute="leading" secondItem="gLZ-ec-Zp2" secondAttribute="trailing" constant="14" id="txY-Xx-xZa"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -76,14 +101,15 @@
                                     <segment title="Events"/>
                                     <segment title="Shops"/>
                                 </segments>
+                                <color key="tintColor" name="tomatoTwo"/>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="B1h-v9-vIZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="0Dx-bo-gaK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B1h-v9-vIZ" secondAttribute="trailing" constant="16" id="7r6-JG-P6t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0qd-nr-7KZ" secondAttribute="trailing" id="ADk-HS-1yM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0qd-nr-7KZ" secondAttribute="bottom" id="Deu-p8-rM2"/>
+                            <constraint firstAttribute="bottom" secondItem="0qd-nr-7KZ" secondAttribute="bottom" id="Deu-p8-rM2"/>
                             <constraint firstItem="B1h-v9-vIZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ENL-K6-CdQ"/>
                             <constraint firstItem="0qd-nr-7KZ" firstAttribute="top" secondItem="B1h-v9-vIZ" secondAttribute="bottom" constant="11" id="TAG-PX-9Aw"/>
                             <constraint firstItem="0qd-nr-7KZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rJu-78-vO8"/>
@@ -98,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.79999999999995" y="25.123152709359609"/>
+            <point key="canvasLocation" x="975.36231884057975" y="24.776785714285712"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y5q-T2-KY0">
@@ -108,6 +134,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bFc-XV-ufJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="navigationBar"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -120,6 +150,19 @@
         </scene>
     </scenes>
     <resources>
-        <image name="event1" width="180" height="180"/>
+        <image name="bitmap" width="66" height="66"/>
+        <image name="singleArrow" width="19" height="19"/>
+        <namedColor name="brownGrey">
+            <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navigationBar">
+            <color red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separatorColor">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tomatoTwo">
+            <color red="0.94117647058823528" green="0.32156862745098042" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
