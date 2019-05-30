@@ -18,6 +18,9 @@ class WDEventViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
         listEventsView.dataSource = eventsDataSource
         listEventsView.delegate = self
         
