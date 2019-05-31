@@ -11,6 +11,7 @@ import UIKit
 final class WDEventViewController: UIViewController {
     @IBOutlet weak var listEventsView: UITableView!
     @IBOutlet weak var listTypeControl: UISegmentedControl!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var viewModel: WDEventViewModelProtocol!
     var configurator: WDEventViewControllerConfiguratorProtocol = WDEventViewControllerConfigurator()
@@ -18,18 +19,8 @@ final class WDEventViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configurator.configure(with: self)
-        
-        viewModel.configure()
-        viewModel.onRefreshDataSource = {
-            self.listEventsView.reloadData()
-        }
-        viewModel.fetchEvents({ result in
-            switch result {
-            case .success: self.listTypeControl.sendActions(for: .valueChanged)
-            case .failure(let error): print(error.localizedDescription)
-            }
-        })
+        prepareView()
+        fetchEvents()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -38,3 +29,26 @@ final class WDEventViewController: UIViewController {
     }
 }
 
+private extension WDEventViewController {
+    func prepareView() {
+        configurator.configure(with: self)
+        
+        viewModel.configure()
+        viewModel.onRefreshDataSource = {
+            self.listEventsView.reloadData()
+        }
+    }
+    
+    func fetchEvents() {
+        activityIndicator.startAnimating()
+        viewModel.fetchEvents({ result in
+            self.activityIndicator.stopAnimating()
+            self.listTypeControl.sendActions(for: .valueChanged)
+            if case let .failure(error) = result {
+                self.showPromptAlert(with: "World Dev Event", message: error.localizedDescription) { action in
+                    print("has been touched button \(action.title ?? "")")
+                }
+            }
+        })
+    }
+}

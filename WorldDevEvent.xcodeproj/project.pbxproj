@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2004841122A110A00019F2EF /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841022A110A00019F2EF /* UIViewController+extension.swift */; };
 		2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */; };
 		20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095621229F3EA00044CD32 /* WDEventsAPI.swift */; };
 		20095624229F42BD0044CD32 /* WDEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095623229F42BD0044CD32 /* WDEvents.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2004841022A110A00019F2EF /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewModel.swift; sourceTree = "<group>"; };
 		20095621229F3EA00044CD32 /* WDEventsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsAPI.swift; sourceTree = "<group>"; };
 		20095623229F42BD0044CD32 /* WDEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEvents.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */,
+				2004841022A110A00019F2EF /* UIViewController+extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				C7E30CC1229F0639001D4AAC /* WDListEventsCell.swift in Sources */,
 				C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */,
 				C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */,
+				2004841122A110A00019F2EF /* UIViewController+extension.swift in Sources */,
 				2055EC2822A089B80089612B /* WDEventOnMapViewController.swift in Sources */,
 				2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */,
 				C70CA39222A0103100CAF4B2 /* WDEventDetailsViewController.swift in Sources */,
