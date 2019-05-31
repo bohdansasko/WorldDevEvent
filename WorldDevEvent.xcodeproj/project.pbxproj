@@ -14,6 +14,9 @@
 		2055EC2A22A090300089612B /* WDEventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC2922A090300089612B /* WDEventAnnotation.swift */; };
 		2055EC2C22A09C600089612B /* WDEventOnMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC2B22A09C600089612B /* WDEventOnMapViewModel.swift */; };
 		2055EC2E22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC2D22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift */; };
+		2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3222A0BACF0089612B /* WDEventDetailsViewModel.swift */; };
+		2055EC3622A0BB020089612B /* WDEventDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3522A0BB020089612B /* WDEventDetailsViewModelProtocol.swift */; };
+		2055EC3822A0BB8D0089612B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3722A0BB8D0089612B /* Constants.swift */; };
 		C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */; };
 		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
 		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
@@ -37,6 +40,9 @@
 		2055EC2922A090300089612B /* WDEventAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventAnnotation.swift; sourceTree = "<group>"; };
 		2055EC2B22A09C600089612B /* WDEventOnMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventOnMapViewModel.swift; sourceTree = "<group>"; };
 		2055EC2D22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventOnMapViewModelProtocol.swift; sourceTree = "<group>"; };
+		2055EC3222A0BACF0089612B /* WDEventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewModel.swift; sourceTree = "<group>"; };
+		2055EC3522A0BB020089612B /* WDEventDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		2055EC3722A0BB8D0089612B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -108,6 +114,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		2055EC3422A0BAFB0089612B /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2055EC3222A0BACF0089612B /* WDEventDetailsViewModel.swift */,
+				2055EC3522A0BB020089612B /* WDEventDetailsViewModelProtocol.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
 		C70CA38C22A00BCC00CAF4B2 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				C70CA39122A0103100CAF4B2 /* WDEventDetailsViewController.swift */,
+				2055EC3422A0BAFB0089612B /* viewModel */,
 			);
 			path = WDEventDetails;
 			sourceTree = "<group>";
@@ -171,6 +187,7 @@
 				C70CA39322A0105A00CAF4B2 /* WDEventDetails */,
 				2055EC2622A0893F0089612B /* WDEventOnMap */,
 				C7E30CC4229F18A3001D4AAC /* extensions */,
+				2055EC3722A0BB8D0089612B /* Constants.swift */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -296,8 +313,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */,
+				2055EC3822A0BB8D0089612B /* Constants.swift in Sources */,
+				2055EC3622A0BB020089612B /* WDEventDetailsViewModelProtocol.swift in Sources */,
 				C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */,
 				2055EC2E22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift in Sources */,
+				2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */,
 				2055EC2A22A090300089612B /* WDEventAnnotation.swift in Sources */,
 				20095624229F42BD0044CD32 /* WDEvents.swift in Sources */,
 				C7E30CC1229F0639001D4AAC /* ListEventsCell.swift in Sources */,

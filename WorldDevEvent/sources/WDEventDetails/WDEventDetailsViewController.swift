@@ -14,40 +14,20 @@ class WDEventDetailsViewController: UIViewController {
     @IBOutlet weak var shortDescriptionLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var event: WDEvent!
-    let kToMapSegue = "toMapSegue"
+    var viewModel: WDEventDetailsViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        prepareUI()
-    }
-    
-    private func prepareUI() {
-        switch event.type {
-        case .event: title = "Event"
-        case .shop: title = "Shop"
-        }
-        
-        bigImageView.load(withURL: event.bigImageURL)
-        titleLabel.text = event.title
-        shortDescriptionLabel.text = event.shortDescription
-        descriptionLabel.text = event.description
+        viewModel.configure()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        
-        if segue.identifier == kToMapSegue {
-            guard let detailsViewController = segue.destination as? WDEventOnMapViewController else {
-                return
-            }
-            detailsViewController.viewModel = WDEventOnMapViewModel(with: detailsViewController, event: event)
-        }
+        viewModel.prepareMapViewController(with: segue)
     }
     
     @IBAction func onTouchButtonShowOnMap(_ sender: Any) {
-        print(#function)
-        performSegue(withIdentifier: kToMapSegue, sender: self)
+        viewModel.showMap()
     }
 }
