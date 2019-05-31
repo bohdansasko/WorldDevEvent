@@ -21,6 +21,11 @@ class WDEventOnMapViewModel: NSObject, WDEventOnMapViewModelProtocol {
     }
     
     func configure() {
+        switch event.type {
+        case .event: mapViewController?.title = "Event Location"
+        case .shop: mapViewController?.title = "Shop Location"
+        }
+        
         if #available(iOS 11.0, *) {
             mapViewController?.mapView.register(WDEventAnnotation.self, forAnnotationViewWithReuseIdentifier: kEventAnnotationReuseIdentifier)
         } else {

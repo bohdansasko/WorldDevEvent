@@ -28,6 +28,12 @@ class WDEventDetailsViewModel: WDEventDetailsViewModelProtocol {
         viewController.titleLabel.text = event.title
         viewController.shortDescriptionLabel.text = event.shortDescription
         viewController.descriptionLabel.text = event.description
+        
+        if iPhoneX() {
+            viewController.showMapButton.titleEdgeInsets = UIEdgeInsets(top: -6.5, left: 0, bottom: 0, right: 0)
+        } else if iPhone5() {
+            viewController.showMapButton.heightAnchor.constraint(equalToConstant: 43).isActive = true
+        }
     }
     
     func showMap() {
@@ -41,5 +47,25 @@ class WDEventDetailsViewModel: WDEventDetailsViewModelProtocol {
             }
             mapViewController.viewModel = WDEventOnMapViewModel(with: mapViewController, event: event)
         }
+    }
+    
+    private func iPhoneX() -> Bool {
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+            case 2436, 2688, 1792: return true
+            default: return false
+            }
+        }
+        return false
+    }
+    
+    private func iPhone5() -> Bool {
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+            case 1136: return true
+            default: return false
+            }
+        }
+        return false
     }
 }

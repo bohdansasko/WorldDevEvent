@@ -13,6 +13,7 @@ class WDEventDetailsViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var shortDescriptionLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var showMapButton: UIButton!
     
     var viewModel: WDEventDetailsViewModelProtocol!
     
