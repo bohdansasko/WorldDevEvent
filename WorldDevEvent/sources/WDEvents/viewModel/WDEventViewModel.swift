@@ -55,19 +55,12 @@ final class WDEventViewModel: NSObject, WDEventViewModelProtocol {
     }
     
     func fetchEvents(_ completion: @escaping (WDFetchEventsResult) -> Void) {
-        URLSession.shared.dataTask(with: WDEventsAPI.eventsURL, completionHandler: { data, response, error in
-            guard let data = data else {
-                OperationQueue.main.addOperation {
-                    completion(.failure(WDFetchEventsError.invalidIncomeData))
-                }
-                return
+        WDEventsAPI.fetchEvents({ result in
+            if case let .success(events) = result {
+                self.events = events
             }
-            let events = WDEventsAPI.events(from: data)
-            self.events = events
-            OperationQueue.main.addOperation {
-                completion(.success(events))
-            }
-        }).resume()
+            completion(result)
+        })
     }
 }
 
