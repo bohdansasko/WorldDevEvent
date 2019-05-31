@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQE-Cr-cxn">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -26,19 +26,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WDEventViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="98" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-nr-7KZ">
-                                <rect key="frame" x="0.0" y="138" width="375" height="674"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="758"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.86979967355728149" green="0.366324782371521" blue="0.21156418323516846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="ListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="98"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A26-0b-R4o" id="Efa-gq-TT2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-ec-Zp2">
@@ -49,9 +49,9 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-XI-gUb" userLabel="titleAndDescription">
-                                                    <rect key="frame" x="96" y="28.333333333333332" width="245" height="41.666666666666671"/>
+                                                    <rect key="frame" x="96" y="28.333333333333332" width="642" height="41.666666666666671"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-9c-LWY">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-9c-LWY">
                                                             <rect key="frame" x="0.0" y="0.0" width="215" height="20.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -66,23 +66,27 @@
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-h8-lKE" userLabel="separatorView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.66666666666666663"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="0.66666666666666663"/>
                                                     <color key="backgroundColor" red="0.78064590692520142" green="0.78004342317581177" blue="0.80392163991928101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="0.5" id="uCc-xw-1Ie"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="singleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-Vd-rts">
-                                                    <rect key="frame" x="346" y="39.666666666666664" width="19" height="19"/>
+                                                    <rect key="frame" x="739" y="39.666666666666664" width="19" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="Fim-cb-gSn"/>
+                                                        <constraint firstAttribute="width" constant="19" id="bcI-7g-hBa"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Tgq-h8-lKE" secondAttribute="trailing" id="2Nc-k7-iWN"/>
-                                                <constraint firstItem="9Tz-Vd-rts" firstAttribute="leading" secondItem="UUJ-XI-gUb" secondAttribute="trailing" constant="5" id="AKd-mN-IYc"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Tz-Vd-rts" secondAttribute="trailing" constant="10" id="46N-VN-gvb"/>
                                                 <constraint firstItem="gLZ-ec-Zp2" firstAttribute="leading" secondItem="Efa-gq-TT2" secondAttribute="leading" constant="16" id="MrH-eS-tee"/>
                                                 <constraint firstItem="Tgq-h8-lKE" firstAttribute="top" secondItem="Efa-gq-TT2" secondAttribute="top" id="Ww9-5I-Fmh"/>
                                                 <constraint firstItem="UUJ-XI-gUb" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="c2n-jN-ZGV"/>
-                                                <constraint firstAttribute="trailing" secondItem="9Tz-Vd-rts" secondAttribute="trailing" constant="10" id="c4j-dq-Tyb"/>
+                                                <constraint firstAttribute="trailing" secondItem="UUJ-XI-gUb" secondAttribute="trailing" constant="30" id="ewW-vx-bvh"/>
                                                 <constraint firstItem="9Tz-Vd-rts" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="kfG-cu-NdP"/>
                                                 <constraint firstItem="gLZ-ec-Zp2" firstAttribute="centerY" secondItem="Efa-gq-TT2" secondAttribute="centerY" id="ltm-Ox-fxi"/>
                                                 <constraint firstItem="Tgq-h8-lKE" firstAttribute="leading" secondItem="Efa-gq-TT2" secondAttribute="leading" id="sey-hb-CIC"/>
@@ -98,7 +102,7 @@
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-v9-vIZ">
-                                <rect key="frame" x="16" y="99" width="343" height="29"/>
+                                <rect key="frame" x="16" y="99" width="382" height="29"/>
                                 <segments>
                                     <segment title="Events"/>
                                     <segment title="Shops"/>
@@ -136,17 +140,17 @@
             <objects>
                 <viewController title="Event" id="d5F-0c-KlZ" customClass="WDEventDetailsViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jpc-Lz-7fz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event12" translatesAutoresizingMaskIntoConstraints="NO" id="j33-jZ-d7f">
-                                <rect key="frame" x="0.0" y="88" width="375" height="283"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="414"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="283" id="Yv4-tz-wFP"/>
+                                    <constraint firstAttribute="width" secondItem="j33-jZ-d7f" secondAttribute="height" multiplier="1:1" id="wj0-Q5-h1l"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="7od-oq-r5h" userLabel="textStackView">
-                                <rect key="frame" x="17" y="399" width="334" height="413"/>
+                                <rect key="frame" x="17" y="530" width="373" height="366"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="N9G-V1-kAy" userLabel="titleAndDescription">
                                         <rect key="frame" x="0.0" y="0.0" width="240.33333333333334" height="46.333333333333336"/>
@@ -166,7 +170,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wr-RI-MhV">
-                                        <rect key="frame" x="0.0" y="63.333333333333314" width="334" height="349.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="63.333333333333371" width="373" height="302.66666666666669"/>
                                         <string key="text">When Google’s CEO Sundar Pichai was growing up in Chennai, south-east India, he had to make regular trips to the hospital to pick up his mother’s blood-test results. It took an hour and 20 minutes by bus, and when he got there he would have to stand and queue for an hour, often to be told the results weren’t ready. It took five years for his family to get their first rotary telephone, when Pichai was 12. It was a landmark moment. “It would take me 10 minutes to call the hospital, and maybe they’d tell me, ‘No, come back tomorrow’,” Pichai says. “We waited a long time to get a refrigerator, too, and I saw how my mom’s life changed: she didn’t need to cook every day, she could spend more time with us. So there is a side of me that has viscerally seen how technology can make a difference, and I still feel it. I feel the optimism and energy, and the moral imperative to accelerate that progress.” Now 45, Pichai is a tall, slight man whose voice is a soft harmony of Indian and American accents. Sitting in his office in a quiet corner of Google’s headquarters, in Mountain View, California, he speaks thoughtfully, often pausing to find the right phrase. The room houses a few pieces of designer furniture, and the requisite treadmill desk – the perfect metaphor for the pace Pichai has to keep up with. Yet his is a disarmingly calm presence, a world away from the prevailing stereotype of the macho-genius tech CEO; when Pichai got the job, one Google employee was quoted as saying: “All the assholes have left.</string>
                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -174,7 +178,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f04-Gq-fza">
-                                <rect key="frame" x="0.0" y="749" width="375" height="63"/>
+                                <rect key="frame" x="0.0" y="833" width="414" height="63"/>
                                 <color key="backgroundColor" red="0.5307997465133667" green="0.70554322004318237" blue="0.30179500579833984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="l6L-w3-MR3"/>
@@ -220,11 +224,11 @@
             <objects>
                 <viewController title="Event Location" id="xEv-2d-WSY" customClass="WDEventOnMapViewController" customModule="WorldDevEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PT1-By-Abm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1bb-uV-3Sk">
-                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -250,7 +254,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jQE-Cr-cxn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="chevron" backIndicatorTransitionMaskImage="chevron" id="bFc-XV-ufJ">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.86979967355728149" green="0.366324782371521" blue="0.21156418323516846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.97260409593582153" green="0.97247141599655151" blue="0.97646456956863403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
