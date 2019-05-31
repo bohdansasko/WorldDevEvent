@@ -39,8 +39,10 @@ class WDEventDetailsViewController: UIViewController {
         super.prepare(for: segue, sender: sender)
         
         if segue.identifier == kToMapSegue {
-            let detailsViewController = segue.destination as! WDEventOnMapViewController
-            detailsViewController.event = event
+            guard let detailsViewController = segue.destination as? WDEventOnMapViewController else {
+                return
+            }
+            detailsViewController.viewModel = WDEventOnMapViewModel(with: detailsViewController, event: event)
         }
     }
     
