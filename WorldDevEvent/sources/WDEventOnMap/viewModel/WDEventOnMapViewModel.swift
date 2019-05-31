@@ -21,7 +21,11 @@ class WDEventOnMapViewModel: NSObject, WDEventOnMapViewModelProtocol {
     }
     
     func configure() {
-        mapViewController?.mapView.register(WDEventAnnotation.self, forAnnotationViewWithReuseIdentifier: kEventAnnotationReuseIdentifier)
+        if #available(iOS 11.0, *) {
+            mapViewController?.mapView.register(WDEventAnnotation.self, forAnnotationViewWithReuseIdentifier: kEventAnnotationReuseIdentifier)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     func showEventOnMap() {

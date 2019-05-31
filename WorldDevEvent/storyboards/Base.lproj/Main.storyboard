@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +32,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="98" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-nr-7KZ">
                                 <rect key="frame" x="0.0" y="138" width="375" height="674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="separatorColor" name="tomatoTwo"/>
+                                <color key="separatorColor" red="0.86979967355728149" green="0.366324782371521" blue="0.21156418323516846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="ListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="98"/>
@@ -61,14 +60,14 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.2.2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKd-r7-GRj">
                                                             <rect key="frame" x="0.0" y="21.333333333333336" width="66" height="20.333333333333336"/>
                                                             <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
-                                                            <color key="textColor" name="brownGrey"/>
+                                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-h8-lKE" userLabel="separatorView">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="0.66666666666666663"/>
-                                                    <color key="backgroundColor" name="separator"/>
+                                                    <color key="backgroundColor" red="0.78064590692520142" green="0.78004342317581177" blue="0.80392163991928101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="0.5" id="uCc-xw-1Ie"/>
                                                     </constraints>
@@ -104,7 +103,7 @@
                                     <segment title="Events"/>
                                     <segment title="Shops"/>
                                 </segments>
-                                <color key="tintColor" name="tomatoTwo"/>
+                                <color key="tintColor" red="0.86979967355728149" green="0.366324782371521" blue="0.21156418323516846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -161,7 +160,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.2.2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LW-zj-vYW">
                                                 <rect key="frame" x="0.0" y="27" width="70.333333333333329" height="19.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
-                                                <color key="textColor" name="brownGrey"/>
+                                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -176,20 +175,20 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f04-Gq-fza">
                                 <rect key="frame" x="0.0" y="749" width="375" height="63"/>
-                                <color key="backgroundColor" name="leaf"/>
+                                <color key="backgroundColor" red="0.5307997465133667" green="0.70554322004318237" blue="0.30179500579833984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="l6L-w3-MR3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="17"/>
                                 <state key="normal" title="Show on Map">
-                                    <color key="titleColor" name="navigationBar"/>
+                                    <color key="titleColor" red="0.97260409593582153" green="0.97247141599655151" blue="0.97646456956863403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="onTouchButtonShowOnMap:" destination="d5F-0c-KlZ" eventType="touchUpInside" id="HAO-PD-4Nm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" name="navigationBar"/>
+                        <color key="backgroundColor" red="0.97260409593582153" green="0.97247141599655151" blue="0.97646456956863403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7od-oq-r5h" secondAttribute="trailing" constant="24" id="HDQ-GU-4Sl"/>
                             <constraint firstAttribute="bottom" secondItem="7od-oq-r5h" secondAttribute="bottom" id="NhI-Qp-pXE"/>
@@ -253,8 +252,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="chevron" backIndicatorTransitionMaskImage="chevron" id="bFc-XV-ufJ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" name="tomatoTwo"/>
-                        <color key="barTintColor" name="navigationBar"/>
+                        <color key="tintColor" red="0.86979967355728149" green="0.366324782371521" blue="0.21156418323516846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.97260409593582153" green="0.97247141599655151" blue="0.97646456956863403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
                         </textAttributes>
@@ -274,20 +273,5 @@
         <image name="chevron" width="12" height="21"/>
         <image name="event12" width="540" height="300"/>
         <image name="singleArrow" width="19" height="19"/>
-        <namedColor name="brownGrey">
-            <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="leaf">
-            <color red="0.47843137254901963" green="0.70980392156862748" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="navigationBar">
-            <color red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="separator">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="tomatoTwo">
-            <color red="0.94117647058823528" green="0.32156862745098042" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>
