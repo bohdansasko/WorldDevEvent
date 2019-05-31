@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WDEventDetailsViewController: UIViewController {
+final class WDEventDetailsViewController: UIViewController {
     @IBOutlet weak var bigImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var shortDescriptionLabel: UILabel!

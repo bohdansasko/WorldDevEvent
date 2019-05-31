@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WDEventViewController: UIViewController {
+final class WDEventViewController: UIViewController {
     @IBOutlet weak var listEventsView: UITableView!
     @IBOutlet weak var listTypeControl: UISegmentedControl!
     

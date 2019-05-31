@@ -176,7 +176,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="661"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQT-5I-FLB" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1147.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1088"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event12" translatesAutoresizingMaskIntoConstraints="NO" id="qg3-JO-bnK">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
@@ -185,19 +185,19 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1f-km-sGI" userLabel="textStackView">
-                                                <rect key="frame" x="20" y="292.99999999999994" width="335" height="854.66666666666652"/>
+                                                <rect key="frame" x="20" y="293" width="335" height="795"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="z2d-R6-sKh" userLabel="titleAndDescription">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240.33333333333334" height="46.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="223" height="45"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpZ-eH-oIQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="240.33333333333334" height="23"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="223" height="22.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.2.2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-CK-WdN">
-                                                                <rect key="frame" x="0.0" y="27" width="70.333333333333329" height="19.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="26.333333333333314" width="71.333333333333329" height="18.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
                                                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -205,7 +205,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEm-SC-ph6">
-                                                        <rect key="frame" x="0.0" y="63.333333333333314" width="335" height="791.33333333333348"/>
+                                                        <rect key="frame" x="0.0" y="62" width="335" height="733"/>
                                                         <string key="text">When Google’s CEO Sundar Pichai was growing up in Chennai, south-east India, he had to make regular trips to the hospital to pick up his mother’s blood-test results. It took an hour and 20 minutes by bus, and when he got there he would have to stand and queue for an hour, often to be told the results weren’t ready. It took five years for his family to get their first rotary telephone, when Pichai was 12. It was a landmark moment. “It would take me 10 minutes to call the hospital, and maybe they’d tell me, ‘No, come back tomorrow’,” Pichai says. “We waited a long time to get a refrigerator, too, and I saw how my mom’s life changed: she didn’t need to cook every day, she could spend more time with us. So there is a side of me that has viscerally seen how technology can make a difference, and I still feel it. I feel the optimism and energy, and the moral imperative to accelerate that progress.” Now 45, Pichai is a tall, slight man whose voice is a soft harmony of Indian and American accents. Sitting in his office in a quiet corner of Google’s headquarters, in Mountain View, California, he speaks thoughtfully, often pausing to find the right phrase. The room houses a few pieces of designer furniture, and the requisite treadmill desk – the perfect metaphor for the pace Pichai has to keep up with. Yet his is a disarmingly calm presence, a world away from the prevailing stereotype of the macho-genius tech CEO; when Pichai got the job, one Google employee was quoted as saying: “All the assholes have left. \n</string>
                                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                                         <nil key="highlightedColor"/>

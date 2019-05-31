@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WDEventDetailsViewModel: WDEventDetailsViewModelProtocol {
+final class WDEventDetailsViewModel: WDEventDetailsViewModelProtocol {
     weak var viewController: WDEventDetailsViewController!
     
     var event: WDEvent

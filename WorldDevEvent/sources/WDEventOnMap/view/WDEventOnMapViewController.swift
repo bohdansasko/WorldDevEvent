@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class WDEventOnMapViewController: UIViewController {
+final class WDEventOnMapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     var viewModel: WDEventOnMapViewModelProtocol!

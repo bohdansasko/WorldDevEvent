@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WDListEventsCell: UITableViewCell {
+final class WDListEventsCell: UITableViewCell {
     @IBOutlet weak var smallImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!

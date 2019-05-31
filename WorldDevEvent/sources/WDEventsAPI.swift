@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WDEventsAPI {
+final class WDEventsAPI {
     private init() {}
     
     static let eventsURL = URL(string: "http://smartbox.software/tt/TT.json")!

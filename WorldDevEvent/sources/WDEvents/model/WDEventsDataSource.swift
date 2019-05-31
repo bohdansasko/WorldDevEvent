@@ -13,7 +13,7 @@ protocol WDEventsDataSourceProtocol: UITableViewDataSource {
     func event(by indexPath: IndexPath) -> WDEvent
 }
 
-class WDEventsDataSource: NSObject {
+final class WDEventsDataSource: NSObject {
     private let kListEventCell = "ListEventCell"
     var events: [WDEvent] = []
 }

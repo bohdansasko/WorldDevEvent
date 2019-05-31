@@ -12,7 +12,7 @@ protocol WDEventViewControllerConfiguratorProtocol {
     func configure(with viewController: WDEventViewController)
 }
 
-class WDEventViewControllerConfigurator: WDEventViewControllerConfiguratorProtocol {
+final class WDEventViewControllerConfigurator: WDEventViewControllerConfiguratorProtocol {
     func configure(with viewController: WDEventViewController) {
         viewController.viewModel = WDEventViewModel(with: viewController,
                                                     dataSource: WDEventsDataSource())

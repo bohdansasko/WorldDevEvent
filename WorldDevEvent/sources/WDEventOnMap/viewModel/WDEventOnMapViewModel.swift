@@ -8,7 +8,7 @@
 
 import MapKit
 
-class WDEventOnMapViewModel: NSObject, WDEventOnMapViewModelProtocol {
+final class WDEventOnMapViewModel: NSObject, WDEventOnMapViewModelProtocol {
     var kEventAnnotationReuseIdentifier: String { return String(describing: WDEventAnnotation.self) }
     
     weak var mapViewController: WDEventOnMapViewController?
