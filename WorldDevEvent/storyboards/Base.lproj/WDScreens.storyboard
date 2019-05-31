@@ -34,7 +34,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.86979967355728149" green="0.366324782371521" blue="0.21156418323516846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="ListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListEventCell" id="A26-0b-R4o" customClass="WDListEventsCell" customModule="WorldDevEvent" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A26-0b-R4o" id="Efa-gq-TT2">
@@ -49,7 +49,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-XI-gUb" userLabel="titleAndDescription">
-                                                    <rect key="frame" x="96" y="28.333333333333332" width="642" height="41.666666666666671"/>
+                                                    <rect key="frame" x="96" y="28.333333333333332" width="288" height="41.666666666666671"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Madison Square Garden 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-9c-LWY">
                                                             <rect key="frame" x="0.0" y="0.0" width="215" height="20.333333333333332"/>
@@ -66,14 +66,14 @@
                                                     </subviews>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-h8-lKE" userLabel="separatorView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="0.66666666666666663"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.66666666666666663"/>
                                                     <color key="backgroundColor" red="0.78064590692520142" green="0.78004342317581177" blue="0.80392163991928101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="0.5" id="uCc-xw-1Ie"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="singleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-Vd-rts">
-                                                    <rect key="frame" x="739" y="39.666666666666664" width="19" height="19"/>
+                                                    <rect key="frame" x="385" y="39.666666666666664" width="19" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19" id="Fim-cb-gSn"/>
                                                         <constraint firstAttribute="width" constant="19" id="bcI-7g-hBa"/>

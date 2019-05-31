@@ -16,18 +16,18 @@
 		2055EC2E22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC2D22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift */; };
 		2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3222A0BACF0089612B /* WDEventDetailsViewModel.swift */; };
 		2055EC3622A0BB020089612B /* WDEventDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3522A0BB020089612B /* WDEventDetailsViewModelProtocol.swift */; };
-		2055EC3822A0BB8D0089612B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3722A0BB8D0089612B /* Constants.swift */; };
+		2055EC3822A0BB8D0089612B /* WDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3722A0BB8D0089612B /* WDConstants.swift */; };
 		C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */; };
 		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
 		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
 		C70CA39222A0103100CAF4B2 /* WDEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA39122A0103100CAF4B2 /* WDEventDetailsViewController.swift */; };
 		C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CA9229F008A001D4AAC /* AppDelegate.swift */; };
 		C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */; };
-		C7E30CAF229F008A001D4AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CAD229F008A001D4AAC /* Main.storyboard */; };
+		C7E30CAF229F008A001D4AAC /* WDScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CAD229F008A001D4AAC /* WDScreens.storyboard */; };
 		C7E30CB1229F008B001D4AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CB0229F008B001D4AAC /* Assets.xcassets */; };
 		C7E30CB4229F008B001D4AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CB2229F008B001D4AAC /* LaunchScreen.storyboard */; };
 		C7E30CBF229F05C4001D4AAC /* WDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CBE229F05C4001D4AAC /* WDEvent.swift */; };
-		C7E30CC1229F0639001D4AAC /* ListEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC0229F0639001D4AAC /* ListEventsCell.swift */; };
+		C7E30CC1229F0639001D4AAC /* WDListEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC0229F0639001D4AAC /* WDListEventsCell.swift */; };
 		C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */; };
 		C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 		2055EC2D22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventOnMapViewModelProtocol.swift; sourceTree = "<group>"; };
 		2055EC3222A0BACF0089612B /* WDEventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewModel.swift; sourceTree = "<group>"; };
 		2055EC3522A0BB020089612B /* WDEventDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
-		2055EC3722A0BB8D0089612B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2055EC3722A0BB8D0089612B /* WDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDConstants.swift; sourceTree = "<group>"; };
 		C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -50,12 +50,12 @@
 		C7E30CA6229F008A001D4AAC /* WorldDevEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldDevEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E30CA9229F008A001D4AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsViewController.swift; sourceTree = "<group>"; };
-		C7E30CAE229F008A001D4AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7E30CAE229F008A001D4AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WDScreens.storyboard; sourceTree = "<group>"; };
 		C7E30CB0229F008B001D4AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7E30CB3229F008B001D4AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7E30CB5229F008B001D4AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E30CBE229F05C4001D4AAC /* WDEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEvent.swift; sourceTree = "<group>"; };
-		C7E30CC0229F0639001D4AAC /* ListEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsCell.swift; sourceTree = "<group>"; };
+		C7E30CC0229F0639001D4AAC /* WDListEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDListEventsCell.swift; sourceTree = "<group>"; };
 		C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				C7E30CC5229F18B0001D4AAC /* model */,
-				20095620229F3E830044CD32 /* viewModel */,
 				C7E30CC6229F18B6001D4AAC /* view */,
+				20095620229F3E830044CD32 /* viewModel */,
 			);
 			path = WDEvents;
 			sourceTree = "<group>";
@@ -183,11 +183,11 @@
 			children = (
 				C7E30CA9229F008A001D4AAC /* AppDelegate.swift */,
 				20095621229F3EA00044CD32 /* WDEventsAPI.swift */,
+				2055EC3722A0BB8D0089612B /* WDConstants.swift */,
 				C70CA38D22A00F9E00CAF4B2 /* WDEvents */,
 				C70CA39322A0105A00CAF4B2 /* WDEventDetails */,
 				2055EC2622A0893F0089612B /* WDEventOnMap */,
 				C7E30CC4229F18A3001D4AAC /* extensions */,
-				2055EC3722A0BB8D0089612B /* Constants.swift */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 		C7E30CBD229F00B8001D4AAC /* storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C7E30CAD229F008A001D4AAC /* Main.storyboard */,
+				C7E30CAD229F008A001D4AAC /* WDScreens.storyboard */,
 				C7E30CB2229F008B001D4AAC /* LaunchScreen.storyboard */,
 			);
 			path = storyboards;
@@ -233,7 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */,
-				C7E30CC0229F0639001D4AAC /* ListEventsCell.swift */,
+				C7E30CC0229F0639001D4AAC /* WDListEventsCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 				C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */,
 				C7E30CB4229F008B001D4AAC /* LaunchScreen.storyboard in Resources */,
 				C7E30CB1229F008B001D4AAC /* Assets.xcassets in Resources */,
-				C7E30CAF229F008A001D4AAC /* Main.storyboard in Resources */,
+				C7E30CAF229F008A001D4AAC /* WDScreens.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,14 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */,
-				2055EC3822A0BB8D0089612B /* Constants.swift in Sources */,
+				2055EC3822A0BB8D0089612B /* WDConstants.swift in Sources */,
 				2055EC3622A0BB020089612B /* WDEventDetailsViewModelProtocol.swift in Sources */,
 				C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */,
 				2055EC2E22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift in Sources */,
 				2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */,
 				2055EC2A22A090300089612B /* WDEventAnnotation.swift in Sources */,
 				20095624229F42BD0044CD32 /* WDEvents.swift in Sources */,
-				C7E30CC1229F0639001D4AAC /* ListEventsCell.swift in Sources */,
+				C7E30CC1229F0639001D4AAC /* WDListEventsCell.swift in Sources */,
 				C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */,
 				C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */,
 				2055EC2822A089B80089612B /* WDEventOnMapViewController.swift in Sources */,
@@ -335,12 +335,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C7E30CAD229F008A001D4AAC /* Main.storyboard */ = {
+		C7E30CAD229F008A001D4AAC /* WDScreens.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C7E30CAE229F008A001D4AAC /* Base */,
 			);
-			name = Main.storyboard;
+			name = WDScreens.storyboard;
 			sourceTree = "<group>";
 		};
 		C7E30CB2229F008B001D4AAC /* LaunchScreen.storyboard */ = {

@@ -64,8 +64,8 @@ class WDEventViewController: UIViewController {
 
 extension WDEventViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let eventCell = cell as? ListEventsCell else {
-            print(#function, "can't cast cell to ListEventsCell")
+        guard let eventCell = cell as? WDListEventsCell else {
+            print(#function, "can't cast cell to \(String(describing: WDListEventsCell.self))")
             return
         }
         let event = eventsDataSource.event(by: indexPath)

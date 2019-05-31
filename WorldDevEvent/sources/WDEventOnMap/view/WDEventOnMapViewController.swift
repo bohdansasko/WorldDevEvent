@@ -20,8 +20,4 @@ class WDEventOnMapViewController: UIViewController {
         viewModel.configure()
         viewModel.showEventOnMap()
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
 }

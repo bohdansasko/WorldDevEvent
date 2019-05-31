@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum FetchEventsResult {
+enum WDFetchEventsResult {
     case success(WDEvents)
     case failure(Error)
 }
 
-enum FetchEventsError: String, Error {
+enum WDFetchEventsError: String, Error {
     case invalidIncomeData = "Wrong data. Please try again a little bit later."
 }
 
@@ -25,7 +25,7 @@ protocol WDEventViewModelProtocol {
     typealias OnRefreshDataSource = (() -> Void)
     var onRefreshDataSource: OnRefreshDataSource? { get set }
     
-    func fetchEvents(_ completion: @escaping (FetchEventsResult) -> Void)
+    func fetchEvents(_ completion: @escaping (WDFetchEventsResult) -> Void)
 }
 
 class WDEventViewModel: WDEventViewModelProtocol {
@@ -39,11 +39,11 @@ class WDEventViewModel: WDEventViewModelProtocol {
     
     var onRefreshDataSource: OnRefreshDataSource?
     
-    func fetchEvents(_ completion: @escaping (FetchEventsResult) -> Void) {
+    func fetchEvents(_ completion: @escaping (WDFetchEventsResult) -> Void) {
         URLSession.shared.dataTask(with: WDEventsAPI.eventsURL, completionHandler: { data, response, error in
             guard let data = data else {
                 OperationQueue.main.addOperation {
-                    completion(.failure(FetchEventsError.invalidIncomeData))
+                    completion(.failure(WDFetchEventsError.invalidIncomeData))
                 }
                 return
             }

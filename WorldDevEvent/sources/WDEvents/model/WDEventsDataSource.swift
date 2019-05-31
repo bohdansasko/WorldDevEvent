@@ -29,7 +29,7 @@ extension WDEventsDataSource: WDEventsDataSourceProtocol {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: kListEventCell) else {
-            print(#function, "can't find ListEventsCell in the object pool")
+            print(#function, "can't find WDListEventsCell in the object pool")
             return UITableViewCell()
         }
         return cell
