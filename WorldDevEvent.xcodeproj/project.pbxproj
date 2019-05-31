@@ -17,6 +17,8 @@
 		2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3222A0BACF0089612B /* WDEventDetailsViewModel.swift */; };
 		2055EC3622A0BB020089612B /* WDEventDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3522A0BB020089612B /* WDEventDetailsViewModelProtocol.swift */; };
 		2055EC3822A0BB8D0089612B /* WDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3722A0BB8D0089612B /* WDConstants.swift */; };
+		2055EC3A22A0CA710089612B /* WDEventViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3922A0CA710089612B /* WDEventViewModelProtocol.swift */; };
+		2055EC3C22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3B22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift */; };
 		C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */; };
 		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
 		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
@@ -43,6 +45,8 @@
 		2055EC3222A0BACF0089612B /* WDEventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewModel.swift; sourceTree = "<group>"; };
 		2055EC3522A0BB020089612B /* WDEventDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
 		2055EC3722A0BB8D0089612B /* WDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDConstants.swift; sourceTree = "<group>"; };
+		2055EC3922A0CA710089612B /* WDEventViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewModelProtocol.swift; sourceTree = "<group>"; };
+		2055EC3B22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewControllerConfigurator.swift; sourceTree = "<group>"; };
 		C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */,
+				2055EC3922A0CA710089612B /* WDEventViewModelProtocol.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 		C70CA38D22A00F9E00CAF4B2 /* WDEvents */ = {
 			isa = PBXGroup;
 			children = (
+				2055EC3B22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift */,
 				C7E30CC5229F18B0001D4AAC /* model */,
 				C7E30CC6229F18B6001D4AAC /* view */,
 				20095620229F3E830044CD32 /* viewModel */,
@@ -320,6 +326,7 @@
 				2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */,
 				2055EC2A22A090300089612B /* WDEventAnnotation.swift in Sources */,
 				20095624229F42BD0044CD32 /* WDEvents.swift in Sources */,
+				2055EC3C22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift in Sources */,
 				C7E30CC1229F0639001D4AAC /* WDListEventsCell.swift in Sources */,
 				C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */,
 				C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */,
@@ -328,6 +335,7 @@
 				C70CA39222A0103100CAF4B2 /* WDEventDetailsViewController.swift in Sources */,
 				2055EC2C22A09C600089612B /* WDEventOnMapViewModel.swift in Sources */,
 				C7E30CBF229F05C4001D4AAC /* WDEvent.swift in Sources */,
+				2055EC3A22A0CA710089612B /* WDEventViewModelProtocol.swift in Sources */,
 				C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

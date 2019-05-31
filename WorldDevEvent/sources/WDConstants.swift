@@ -12,3 +12,12 @@ enum WDSegues: String {
     case toMapSegue
     case toDetailsSegue
 }
+
+enum WDFetchEventsResult {
+    case success(WDEvents)
+    case failure(Error)
+}
+
+enum WDFetchEventsError: String, Error {
+    case invalidIncomeData = "Wrong data. Please try again a little bit later."
+}
