@@ -26,6 +26,7 @@
 		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
 		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
 		C70CA39222A0103100CAF4B2 /* WDEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA39122A0103100CAF4B2 /* WDEventDetailsViewController.swift */; };
+		C7A629D522A2E05900A78ECF /* WDEventsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A629D422A2E05900A78ECF /* WDEventsViewControllerTests.swift */; };
 		C7E30CAA229F008A001D4AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CA9229F008A001D4AAC /* AppDelegate.swift */; };
 		C7E30CAC229F008A001D4AAC /* WDEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */; };
 		C7E30CAF229F008A001D4AAC /* WDScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CAD229F008A001D4AAC /* WDScreens.storyboard */; };
@@ -35,6 +36,16 @@
 		C7E30CC1229F0639001D4AAC /* WDListEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC0229F0639001D4AAC /* WDListEventsCell.swift */; };
 		C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7A629CF22A2D77C00A78ECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7E30C9E229F008A001D4AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7E30CA5229F008A001D4AAC;
+			remoteInfo = WorldDevEvent;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2004841022A110A00019F2EF /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
@@ -56,6 +67,9 @@
 		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		C70CA39122A0103100CAF4B2 /* WDEventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventDetailsViewController.swift; sourceTree = "<group>"; };
+		C7A629CA22A2D77C00A78ECF /* WorldDevEventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldDevEventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A629CE22A2D77C00A78ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7A629D422A2E05900A78ECF /* WDEventsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsViewControllerTests.swift; sourceTree = "<group>"; };
 		C7E30CA6229F008A001D4AAC /* WorldDevEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldDevEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E30CA9229F008A001D4AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E30CAB229F008A001D4AAC /* WDEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C7A629C722A2D77C00A78ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7E30CA3229F008A001D4AAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,10 +192,20 @@
 			path = WDEventDetails;
 			sourceTree = "<group>";
 		};
+		C7A629CB22A2D77C00A78ECF /* WorldDevEventTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7A629D422A2E05900A78ECF /* WDEventsViewControllerTests.swift */,
+				C7A629CE22A2D77C00A78ECF /* Info.plist */,
+			);
+			path = WorldDevEventTests;
+			sourceTree = "<group>";
+		};
 		C7E30C9D229F008A001D4AAC = {
 			isa = PBXGroup;
 			children = (
 				C7E30CA8229F008A001D4AAC /* WorldDevEvent */,
+				C7A629CB22A2D77C00A78ECF /* WorldDevEventTests */,
 				C7E30CA7229F008A001D4AAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -183,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E30CA6229F008A001D4AAC /* WorldDevEvent.app */,
+				C7A629CA22A2D77C00A78ECF /* WorldDevEventTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,6 +293,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C7A629C922A2D77C00A78ECF /* WorldDevEventTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A629D122A2D77C00A78ECF /* Build configuration list for PBXNativeTarget "WorldDevEventTests" */;
+			buildPhases = (
+				C7A629C622A2D77C00A78ECF /* Sources */,
+				C7A629C722A2D77C00A78ECF /* Frameworks */,
+				C7A629C822A2D77C00A78ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7A629D022A2D77C00A78ECF /* PBXTargetDependency */,
+			);
+			name = WorldDevEventTests;
+			productName = WorldDevEventTests;
+			productReference = C7A629CA22A2D77C00A78ECF /* WorldDevEventTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C7E30CA5229F008A001D4AAC /* WorldDevEvent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E30CB8229F008B001D4AAC /* Build configuration list for PBXNativeTarget "WorldDevEvent" */;
@@ -288,6 +338,11 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = vinso;
 				TargetAttributes = {
+					C7A629C922A2D77C00A78ECF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = C7E30CA5229F008A001D4AAC;
+					};
 					C7E30CA5229F008A001D4AAC = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -307,11 +362,19 @@
 			projectRoot = "";
 			targets = (
 				C7E30CA5229F008A001D4AAC /* WorldDevEvent */,
+				C7A629C922A2D77C00A78ECF /* WorldDevEventTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C7A629C822A2D77C00A78ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7E30CA4229F008A001D4AAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +391,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C7A629C622A2D77C00A78ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A629D522A2E05900A78ECF /* WDEventsViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7E30CA2229F008A001D4AAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +429,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C7A629D022A2D77C00A78ECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7E30CA5229F008A001D4AAC /* WorldDevEvent */;
+			targetProxy = C7A629CF22A2D77C00A78ECF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C7E30CAD229F008A001D4AAC /* WDScreens.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -378,6 +457,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C7A629D222A2D77C00A78ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ8948VJT6;
+				INFOPLIST_FILE = WorldDevEventTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hillarious.WorldDevEventTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldDevEvent.app/WorldDevEvent";
+			};
+			name = Debug;
+		};
+		C7A629D322A2D77C00A78ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ8948VJT6;
+				INFOPLIST_FILE = WorldDevEventTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hillarious.WorldDevEventTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldDevEvent.app/WorldDevEvent";
+			};
+			name = Release;
+		};
 		C7E30CB6229F008B001D4AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -537,6 +659,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C7A629D122A2D77C00A78ECF /* Build configuration list for PBXNativeTarget "WorldDevEventTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A629D222A2D77C00A78ECF /* Debug */,
+				C7A629D322A2D77C00A78ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C7E30CA1229F008A001D4AAC /* Build configuration list for PBXProject "WorldDevEvent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
