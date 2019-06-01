@@ -207,7 +207,7 @@
 				C70CA38D22A00F9E00CAF4B2 /* WDEvents */,
 				C70CA39322A0105A00CAF4B2 /* WDEventDetails */,
 				2055EC2622A0893F0089612B /* WDEventOnMap */,
-				C7E30CC4229F18A3001D4AAC /* extensions */,
+				C7E30CC4229F18A3001D4AAC /* WDExtensions */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -231,12 +231,12 @@
 			path = storyboards;
 			sourceTree = "<group>";
 		};
-		C7E30CC4229F18A3001D4AAC /* extensions */ = {
+		C7E30CC4229F18A3001D4AAC /* WDExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				2004841022A110A00019F2EF /* UIViewController+extension.swift */,
 			);
-			path = extensions;
+			path = WDExtensions;
 			sourceTree = "<group>";
 		};
 		C7E30CC5229F18B0001D4AAC /* model */ = {
