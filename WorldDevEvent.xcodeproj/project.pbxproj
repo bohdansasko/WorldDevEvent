@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2004841122A110A00019F2EF /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841022A110A00019F2EF /* UIViewController+extension.swift */; };
-		2004841322A1133D0019F2EF /* WDImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841222A1133D0019F2EF /* WDImageDownload.swift */; };
+		2004841322A1133D0019F2EF /* WDImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841222A1133D0019F2EF /* WDImageDownloadManager.swift */; };
 		2004841622A116230019F2EF /* WDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841522A116230019F2EF /* WDOperation.swift */; };
 		2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */; };
 		20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095621229F3EA00044CD32 /* WDEventsAPI.swift */; };
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2004841022A110A00019F2EF /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
-		2004841222A1133D0019F2EF /* WDImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDImageDownload.swift; sourceTree = "<group>"; };
+		2004841222A1133D0019F2EF /* WDImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDImageDownloadManager.swift; sourceTree = "<group>"; };
 		2004841522A116230019F2EF /* WDOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDOperation.swift; sourceTree = "<group>"; };
 		2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewModel.swift; sourceTree = "<group>"; };
 		20095621229F3EA00044CD32 /* WDEventsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsAPI.swift; sourceTree = "<group>"; };
@@ -79,13 +79,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2004841422A116140019F2EF /* Image downloading */ = {
+		2004841422A116140019F2EF /* WDImageDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
-				2004841222A1133D0019F2EF /* WDImageDownload.swift */,
+				2004841222A1133D0019F2EF /* WDImageDownloadManager.swift */,
 				2004841522A116230019F2EF /* WDOperation.swift */,
 			);
-			path = "Image downloading";
+			path = WDImageDownloadManager;
 			sourceTree = "<group>";
 		};
 		20095620229F3E830044CD32 /* viewModel */ = {
@@ -203,7 +203,7 @@
 				C7E30CA9229F008A001D4AAC /* AppDelegate.swift */,
 				20095621229F3EA00044CD32 /* WDEventsAPI.swift */,
 				2055EC3722A0BB8D0089612B /* WDConstants.swift */,
-				2004841422A116140019F2EF /* Image downloading */,
+				2004841422A116140019F2EF /* WDImageDownloadManager */,
 				C70CA38D22A00F9E00CAF4B2 /* WDEvents */,
 				C70CA39322A0105A00CAF4B2 /* WDEventDetails */,
 				2055EC2622A0893F0089612B /* WDEventOnMap */,
@@ -335,7 +335,7 @@
 				2004841622A116230019F2EF /* WDOperation.swift in Sources */,
 				20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */,
 				2055EC3822A0BB8D0089612B /* WDConstants.swift in Sources */,
-				2004841322A1133D0019F2EF /* WDImageDownload.swift in Sources */,
+				2004841322A1133D0019F2EF /* WDImageDownloadManager.swift in Sources */,
 				2055EC3622A0BB020089612B /* WDEventDetailsViewModelProtocol.swift in Sources */,
 				2055EC2E22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift in Sources */,
 				2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */,
