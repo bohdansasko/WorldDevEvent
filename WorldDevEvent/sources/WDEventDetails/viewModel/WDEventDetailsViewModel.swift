@@ -12,10 +12,12 @@ final class WDEventDetailsViewModel: WDEventDetailsViewModelProtocol {
     weak var viewController: WDEventDetailsViewController!
     
     var event: WDEvent
+    var imageDownloadManager: WDImageDownloadManagerProtocol
     
-    required init(with viewController: WDEventDetailsViewController, event: WDEvent) {
+    required init(with viewController: WDEventDetailsViewController, event: WDEvent, imageDownloadManager: WDImageDownloadManagerProtocol) {
         self.viewController = viewController
         self.event = event
+        self.imageDownloadManager = imageDownloadManager
     }
     
     func configure() {
@@ -23,8 +25,10 @@ final class WDEventDetailsViewModel: WDEventDetailsViewModelProtocol {
         case .event: viewController.title = "Event"
         case .shop: viewController.title = "Shop"
         }
-        
-        viewController.bigImageView.load(withURL: event.bigImageURL)
+
+        imageDownloadManager.downloadImage(event.bigImageURL, indexPath: nil) { image, url, indexPath, error in
+            self.viewController.bigImageView.image = image
+        }
         viewController.titleLabel.text = event.title
         viewController.shortDescriptionLabel.text = event.shortDescription
         viewController.descriptionLabel.text = event.description

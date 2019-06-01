@@ -44,6 +44,7 @@ private extension WDEventViewController {
         viewModel.fetchEvents({ result in
             self.activityIndicator.stopAnimating()
             self.listTypeControl.sendActions(for: .valueChanged)
+            
             if case let .failure(error) = result {
                 self.showPromptAlert(with: "World Dev Event", message: error.localizedDescription) { action in
                     print("has been touched button \(action.title ?? "")")

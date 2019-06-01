@@ -11,6 +11,7 @@ import UIKit
 final class WDEventViewModel: NSObject, WDEventViewModelProtocol {
     unowned var viewController: WDEventViewController
     var dataSource: WDEventsDataSourceProtocol?
+    var imageDownloadManager: WDImageDownloadManagerProtocol
     
     var events: WDEvents = WDEvents()
     var currenListType: WDListType = .events {
@@ -20,9 +21,10 @@ final class WDEventViewModel: NSObject, WDEventViewModelProtocol {
     
     var onRefreshDataSource: OnRefreshDataSource?
     
-    init(with viewController: WDEventViewController, dataSource: WDEventsDataSourceProtocol?) {
+    init(with viewController: WDEventViewController, dataSource: WDEventsDataSourceProtocol?, imageDownloadManager: WDImageDownloadManagerProtocol) {
         self.viewController = viewController
         self.dataSource = dataSource
+        self.imageDownloadManager = imageDownloadManager
     }
     
     func configure() {
@@ -45,7 +47,9 @@ final class WDEventViewModel: NSObject, WDEventViewModelProtocol {
                     return
             }
             detailsViewController.viewModel = WDEventDetailsViewModel(with: detailsViewController,
-                                                                      event: selectedEvent)
+                                                                      event: selectedEvent,
+                                                                      imageDownloadManager: WDImageDownloadManager.shared
+            )
             self.eventSelectedIndexPath = nil
         }
     }
@@ -87,15 +91,38 @@ private extension WDEventViewModel {
 extension WDEventViewModel: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard
-            let eventCell = cell as? WDListEventsCell,
-            let event = dataSource?.event(by: indexPath) else {
+            let event = dataSource?.event(by: indexPath),
+            let eventCell = cell as? WDListEventsCell else {
             print(#function, "can't cast cell to \(String(describing: WDListEventsCell.self)) or get event")
             return
         }
-        
         eventCell.update(title: event.title,
                          description: event.shortDescription,
-                         imageURL: event.smallImageURL)
+                         image: nil)
+        print("load image for \(indexPath)")
+        imageDownloadManager.downloadImage(event.smallImageURL, indexPath: indexPath) {
+            image, url, indexPath, error in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            guard
+                let indexPath = indexPath,
+                let event = self.dataSource?.event(by: indexPath),
+                let eventCell = self.viewController.listEventsView.cellForRow(at: indexPath) as? WDListEventsCell else {
+                    print(#function, "something went wrong")
+                    return
+            }
+            eventCell.update(title: event.title,
+                             description: event.shortDescription,
+                             image: image)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let event = dataSource?.event(by: indexPath) else { return }
+        imageDownloadManager.slowDownImageDownloadTaskFor(event.smallImageURL)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -23,12 +23,13 @@ final class WDListEventsCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        update(title: nil, description: nil, imageURL: nil)
+        update(title: nil, description: nil, image: nil)
     }
     
-    func update(title: String?, description: String?, imageURL: String?) {
+    func update(title: String?, description: String?, image: UIImage?) {
         titleLabel.text = title
         descriptionLabel.text = description
-        smallImageView.load(withURL: imageURL)
+        smallImageView.image = image
+        smallImageView.isHidden = image == nil
     }
 }

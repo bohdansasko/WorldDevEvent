@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2004841122A110A00019F2EF /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841022A110A00019F2EF /* UIViewController+extension.swift */; };
 		2004841322A1133D0019F2EF /* WDImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841222A1133D0019F2EF /* WDImageDownload.swift */; };
-		2004841622A116230019F2EF /* PGOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841522A116230019F2EF /* PGOperation.swift */; };
+		2004841622A116230019F2EF /* WDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004841522A116230019F2EF /* WDOperation.swift */; };
 		2009561F229F3E7F0044CD32 /* WDEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */; };
 		20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095621229F3EA00044CD32 /* WDEventsAPI.swift */; };
 		20095624229F42BD0044CD32 /* WDEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20095623229F42BD0044CD32 /* WDEvents.swift */; };
@@ -33,14 +33,13 @@
 		C7E30CB4229F008B001D4AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E30CB2229F008B001D4AAC /* LaunchScreen.storyboard */; };
 		C7E30CBF229F05C4001D4AAC /* WDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CBE229F05C4001D4AAC /* WDEvent.swift */; };
 		C7E30CC1229F0639001D4AAC /* WDListEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC0229F0639001D4AAC /* WDListEventsCell.swift */; };
-		C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */; };
 		C7E30CC8229F1904001D4AAC /* WDEventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2004841022A110A00019F2EF /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		2004841222A1133D0019F2EF /* WDImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDImageDownload.swift; sourceTree = "<group>"; };
-		2004841522A116230019F2EF /* PGOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGOperation.swift; sourceTree = "<group>"; };
+		2004841522A116230019F2EF /* WDOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDOperation.swift; sourceTree = "<group>"; };
 		2009561E229F3E7F0044CD32 /* WDEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewModel.swift; sourceTree = "<group>"; };
 		20095621229F3EA00044CD32 /* WDEventsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsAPI.swift; sourceTree = "<group>"; };
 		20095623229F42BD0044CD32 /* WDEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEvents.swift; sourceTree = "<group>"; };
@@ -66,7 +65,6 @@
 		C7E30CB5229F008B001D4AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E30CBE229F05C4001D4AAC /* WDEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEvent.swift; sourceTree = "<group>"; };
 		C7E30CC0229F0639001D4AAC /* WDListEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDListEventsCell.swift; sourceTree = "<group>"; };
-		C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		C7E30CC7229F1904001D4AAC /* WDEventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				2004841222A1133D0019F2EF /* WDImageDownload.swift */,
-				2004841522A116230019F2EF /* PGOperation.swift */,
+				2004841522A116230019F2EF /* WDOperation.swift */,
 			);
 			path = "Image downloading";
 			sourceTree = "<group>";
@@ -236,7 +234,6 @@
 		C7E30CC4229F18A3001D4AAC /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C7E30CC2229F187D001D4AAC /* UIImageView+extension.swift */,
 				2004841022A110A00019F2EF /* UIViewController+extension.swift */,
 			);
 			path = extensions;
@@ -335,12 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2004841622A116230019F2EF /* PGOperation.swift in Sources */,
+				2004841622A116230019F2EF /* WDOperation.swift in Sources */,
 				20095622229F3EA00044CD32 /* WDEventsAPI.swift in Sources */,
 				2055EC3822A0BB8D0089612B /* WDConstants.swift in Sources */,
 				2004841322A1133D0019F2EF /* WDImageDownload.swift in Sources */,
 				2055EC3622A0BB020089612B /* WDEventDetailsViewModelProtocol.swift in Sources */,
-				C7E30CC3229F187E001D4AAC /* UIImageView+extension.swift in Sources */,
 				2055EC2E22A09C7C0089612B /* WDEventOnMapViewModelProtocol.swift in Sources */,
 				2055EC3322A0BACF0089612B /* WDEventDetailsViewModel.swift in Sources */,
 				2055EC2A22A090300089612B /* WDEventAnnotation.swift in Sources */,

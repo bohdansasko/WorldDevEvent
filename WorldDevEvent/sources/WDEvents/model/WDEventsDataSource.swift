@@ -15,7 +15,15 @@ protocol WDEventsDataSourceProtocol: UITableViewDataSource {
 
 final class WDEventsDataSource: NSObject {
     private let kListEventCell = "ListEventCell"
-    var events: [WDEvent] = []
+    var events: [WDEvent] = [] {
+        didSet {
+            print("======= events =======")
+            events.forEach({
+                print($0.id, " => ", $0.title)
+            })
+            print("==============\n")
+        }
+    }
 }
 
 extension WDEventsDataSource: WDEventsDataSourceProtocol {
