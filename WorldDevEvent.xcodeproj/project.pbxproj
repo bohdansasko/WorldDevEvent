@@ -23,6 +23,7 @@
 		2055EC3A22A0CA710089612B /* WDEventViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3922A0CA710089612B /* WDEventViewModelProtocol.swift */; };
 		2055EC3C22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055EC3B22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift */; };
 		2073A38622A469DA00BD49CE /* WDEventViewControllerConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A38522A469DA00BD49CE /* WDEventViewControllerConfiguratorTests.swift */; };
+		2073A38922A46DD600BD49CE /* WDEventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2073A38822A46DD600BD49CE /* WDEventsTests.swift */; };
 		C70CA38922A00BCA00CAF4B2 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */; };
 		C70CA38A22A00BCA00CAF4B2 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */; };
 		C70CA38B22A00BCA00CAF4B2 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */; };
@@ -65,6 +66,7 @@
 		2055EC3922A0CA710089612B /* WDEventViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewModelProtocol.swift; sourceTree = "<group>"; };
 		2055EC3B22A0CEBD0089612B /* WDEventViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewControllerConfigurator.swift; sourceTree = "<group>"; };
 		2073A38522A469DA00BD49CE /* WDEventViewControllerConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventViewControllerConfiguratorTests.swift; sourceTree = "<group>"; };
+		2073A38822A46DD600BD49CE /* WDEventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDEventsTests.swift; sourceTree = "<group>"; };
 		C70CA38622A00BC700CAF4B2 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C70CA38722A00BC700CAF4B2 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		C70CA38822A00BC700CAF4B2 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -169,8 +171,17 @@
 			children = (
 				C7A629D422A2E05900A78ECF /* WDEventsViewControllerTests.swift */,
 				2073A38522A469DA00BD49CE /* WDEventViewControllerConfiguratorTests.swift */,
+				2073A38A22A46DD900BD49CE /* model */,
 			);
 			path = WDEvents;
+			sourceTree = "<group>";
+		};
+		2073A38A22A46DD900BD49CE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2073A38822A46DD600BD49CE /* WDEventsTests.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		C70CA38C22A00BCC00CAF4B2 /* fonts */ = {
@@ -406,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2073A38922A46DD600BD49CE /* WDEventsTests.swift in Sources */,
 				C7A629D522A2E05900A78ECF /* WDEventsViewControllerTests.swift in Sources */,
 				2073A38622A469DA00BD49CE /* WDEventViewControllerConfiguratorTests.swift in Sources */,
 			);
