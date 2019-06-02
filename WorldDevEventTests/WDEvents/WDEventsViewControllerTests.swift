@@ -29,25 +29,16 @@ final class MockWDEventsDataSource: NSObject, WDEventsDataSourceProtocol {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
-    
-    
 }
 
-//viewController.viewModel = WDEventViewModel(with: viewController,
-//                                            dataSource: WDEventsDataSource(),
-//                                            imageDownloadManager: WDImageDownloadManager.shared
-
-class WDEventsViewControllerTests: XCTestCase {
+final class WDEventsViewControllerTests: XCTestCase {
     var viewController: WDEventViewController!
-//    var viewModel: WDEventViewModelProtocol!
-//    var configurator: WDEventViewControllerConfiguratorProtocol = WDEventViewControllerConfigurator()
     
     override func setUp() {
         super.setUp()
         
         viewController = UIStoryboard(name: StoryboardName.wdScreens.rawValue,
                                       bundle: nil).instantiateViewController(withIdentifier: String(describing: WDEventViewController.self)) as! WDEventViewController
-        
     }
 
     override func tearDown() {
@@ -64,13 +55,11 @@ class WDEventsViewControllerTests: XCTestCase {
         // when
         let _ = viewController.view
         
+        // then
         XCTAssertTrue(viewController.listEventsView != nil, "Shouldn't be nil")
         XCTAssertTrue(viewController.listTypeControl != nil, "Shouldn't be nil")
         XCTAssertTrue(viewController.activityIndicator != nil, "Shouldn't be nil")
         XCTAssertTrue(viewController.viewModel != nil, "Shouldn't be nil")
         XCTAssert(viewController.viewModel.viewController === viewController, "Isn't equal")
-        
-        // then
-        
     }
 }
